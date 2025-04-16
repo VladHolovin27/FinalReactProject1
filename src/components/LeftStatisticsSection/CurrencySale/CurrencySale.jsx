@@ -1,8 +1,7 @@
 import React, { useRef, useEffect } from 'react';
-import { Chart, CategoryScale, LinearScale, LineElement, PointElement, LineController, Title, Tooltip } from 'chart.js';
 import styles from "./CurrencySale.module.css"
-
-Chart.register(CategoryScale, LinearScale, LineElement, PointElement, LineController, Title, Tooltip);
+import { Chart, CategoryScale, LinearScale, LineElement, PointElement, LineController, Title, Tooltip, Filler } from 'chart.js';
+Chart.register(CategoryScale, LinearScale, LineElement, PointElement, LineController, Title, Tooltip, Filler);
 
 const CurrencySale = () => {
     const chartRef = useRef(null);
